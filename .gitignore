@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Python/IDEA
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.idea/
+
+# Data
+/data/
+/cache/
+/results/
