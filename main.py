@@ -182,7 +182,7 @@ DATASETS: dict[str, DatasetConfig] = {
     ),
     **{
         f"antshapes_{v.lower()}": DatasetConfig(
-            f"ANTShapes ({v.title()})", v, (128, 128, 2), SHAPE_NAMES,
+            f"ANTShapes ({'Standard' if v == 'VANILLA' else v.title()})", v, (128, 128, 2), SHAPE_NAMES,
             10_000, False, _split_dataset(v, read_antshapes),
             setup=f"Place the ANTShapes {v} export here ({{id}}/events.bin, objects.bin, plus split.json).",
         )
